@@ -283,7 +283,7 @@ button {
 }
 @media screen and (min-width: 1158px) {
     .page-start {
-        max-width: 1140px;
+        max-width: 1440px;
         padding-top: 188px;
         padding-bottom: 188px;
     }
@@ -358,10 +358,12 @@ button {
 .flex-solution {
     margin-top: 120px;
     margin-bottom: 120px;
+    max-height: 224px;
 }
 .solution-list {
     flex-basis: calc((100% - 72px) / 4);
     margin: 0 0;
+    max-height: 224px;
 }
 }
 /*---------------------solutions-----------------------*/
@@ -384,10 +386,267 @@ button {
 }
 .sect-team {
     background: #f4f4fd;
-
     padding-top: 96px;
     padding-bottom: 96px;
 }
+.team-text {
+    text-align: center;
+    margin-bottom: 8px;
+}
+.team-card {
+    padding: 32px 0
+}
+.svg-link {
+    width: 40px;
+    height: 40px;
+    background-color: #4d5ae5;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.svg-social {
+    fill: #F4F4FD;
+}
+.svg-container {
+    display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 24px;     
+}
+.svg-link:hover,
+.svg-link:focus {
+    background-color: #404bbf;
+    ;
+}
+.team-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 72px;
+}
+.title-name {
+    font-weight: 500;
+        font-size: 20px;
+        line-height: 1.2;
+}
+@media screen and (min-width: 768px) {
+    .team-list {
+        align-items: center;
+        justify-content: center;
+        gap: 64px 24px;
+    }
+    .title-name {
+        text-align: center;
+    }
+    @media screen and (min-width: 1158px) {
+    .sect-team {
+               
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+}
+}
 /*---------------------team---------------------------*/
-/*-----------------------------------------------------*/
-/*-----------------------------------------------------*/
+/*-----------------Our Portfolio-----------------------*/
+
+ .flex-portfolio {
+     display: flex;
+     gap: 48px 24px;
+     flex-wrap: wrap;
+     justify-content: center;
+     align-items: center;
+ }
+
+ .flex-portfolio .title-our-three {
+     margin-bottom: 8px;
+ }
+
+ .flex-portfolio .p-text {
+
+ }
+
+
+ .portfolio {
+     padding-top: 96px;
+     padding-bottom: 96px;
+ }
+
+ .list-portfolio {
+     width: 288px;
+     height: 400px;
+     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1)
+ }
+
+ .app-text {
+     border: 1px solid #e7e9fc;
+     padding: 32px 16px;
+     border-top: none;
+ }
+
+ .wrap-description {
+     position: relative;
+     overflow: hidden;
+ }
+
+ .description {
+     padding: 40px 32px;
+     font-weight: 400;
+     font-size: 16px;
+     line-height: 1.5;
+     letter-spacing: 0.02em;
+     color: #f4f4fd;
+     position: absolute;
+     top: 0;
+     background-color: #4d5ae5;
+     height: 100%;
+     transform: translateY(100%);
+     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+ }
+
+ .list-portfolio:hover .description {
+     transform: translate(0);
+
+ }
+
+ .list-portfolio:hover {
+     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+         0px 1px 1px rgba(46, 47, 66, 0.16),
+         0px 2px 1px rgba(46, 47, 66, 0.08);
+ }
+ .title-portfolio {
+    font-weight: 500;
+        font-size: 20px;
+        line-height: 1.2;
+        letter-spacing: 0.02em;
+        color: #2e2f42;
+        text-align: left;
+ }
+ @media screen and (min-width: 768px) {
+    .list-portfolio {
+            width: 356px;
+            height: 420px;
+    }
+ }
+  @media screen and (min-width: 1158px) {
+    .list-portfolio {
+            width: 360px;
+    }
+         .portfolio {
+             padding-top: 120px;
+             padding-bottom: 120px;
+         }
+  }
+
+/*-----------------Our Portfolio-----------------------*/
+/*-------------------footer----------------------------*/
+.page-footer {
+    background-color: #2e2f42;
+    color: #f4f4fd;
+    padding-top: 96px;
+    padding-bottom: 96px;
+    text-align: center;
+}
+.footer-logo .logo-part {
+    color: #f4f4fd;
+}
+.footer-text {
+    max-width: 288px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+     letter-spacing: 0.02em;
+    color: #f4f4fd;
+    text-align: left;
+    margin-top: 16px;
+}
+.svg-container.svg-list {
+    gap: 16px;
+}
+.footer-flex {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 72px;
+    justify-content: center;
+}
+.footer-link-text {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #fff;
+    margin-bottom: 16px;
+    text-align: center;
+}
+.svg-container .svg-footer:hover,
+.svg-container .svg-footer:focus {
+    background-color: #31d0aa;
+}
+.footer-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+.footer-input-text {
+    text-align: center;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #fff;
+    margin-bottom: 16px;
+}
+.footer-input {
+    display: flex;
+    align-items: center;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    width: 288px;
+    height: 40px;
+    background-color: transparent;
+    padding-left: 16px;
+    color: #fff;
+    font-size: 12px;
+    line-height: 2;
+    letter-spacing: 0.04em;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+.footer-input::placeholder {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 2;
+    letter-spacing: 0.04em;
+    color: #fff;
+}
+.footer-input-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    padding: 8px 24px;
+    min-width: 165px;
+    height: 40px;
+    background: #4d5ae5;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #fff;
+    border: none;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
+}
+.footer-input-btn:hover {
+    background-color: #404BBF;
+}
+.footer-btn-svg {
+    fill: #fff;
+    margin-left: 16px;
+
+}
+
+/*-------------------footer----------------------------*/

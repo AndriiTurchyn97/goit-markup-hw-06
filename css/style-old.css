@@ -278,12 +278,6 @@ letter-spacing: 0.02em;
 color: #2e2f42;
 
 }
-
-
-
-
-
-
 .sect-team {
     background: #f4f4fd;
     
@@ -402,7 +396,6 @@ color: #2e2f42;
 }
 .footer-text {
     max-width: 264px;
-   
 }
 .svg-container.svg-list {
     gap: 16px;
@@ -426,8 +419,9 @@ color: #2e2f42;
         margin-bottom: 16px;
 }
 
+
 .svg-container .svg-footer:hover,
-.svg-container .svg-footer:focus{
+.svg-container .svg-footer:focus {
     background-color: #31d0aa;
 }
 
