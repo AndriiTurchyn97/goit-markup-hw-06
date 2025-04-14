@@ -566,7 +566,6 @@ button {
 }
 .footer-flex {
     display: flex;
-    align-items: center;
     flex-wrap: wrap;
     gap: 72px;
     justify-content: center;
@@ -646,7 +645,25 @@ button {
 .footer-btn-svg {
     fill: #fff;
     margin-left: 16px;
-
+}
+@media screen and (min-width: 768px) {
+    .footer-input-text, 
+    .footer-link-text,
+    .footer-logo-p {
+        text-align: left;
+    }
+    .footer-flex {
+        gap: 72px 24px;
+         justify-content: flex-start;
+         margin: 0 auto;
+    }
+    .footer-input-form {
+       
+    }
+    .page-footer {
+    
+    }
+  
 }
 
 /*-------------------footer----------------------------*/
